@@ -1,0 +1,26 @@
+{
+  "name": "money_bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "bot_start": "pm2 start index.js --name budget-bot",
+    "bot_stop": "pm2 stop budget-bot",
+    "bot_restart": "pm2 restart budget-bot",
+    "bot_logs": "pm2 logs budget-bot",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.4.5",
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.21",
+    "node-schedule": "^2.1.1",
+    "node-telegram-bot-api": "^0.66.0",
+    "path": "^0.12.7",
+    "pm2": "^5.4.3"
+  }
+}
